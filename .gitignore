@@ -1,0 +1,9 @@
+﻿__pycache__/
+*.pyc
+.venv/
+venv/
+node_modules/
+.DS_Store
+Thumbs.db
+# hasil generate tree-sitter (dibuat ulang dengan `tree-sitter generate`)
+tree-sitter-filter/build/
