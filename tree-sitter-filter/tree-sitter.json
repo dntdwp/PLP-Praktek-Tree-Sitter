@@ -1,0 +1,39 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "filter",
+      "camelcase": "Filter",
+      "scope": "source.filter",
+      "path": ".",
+      "file-types": [
+        "filter"
+      ],
+      "highlights": "queries/highlights.scm"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "Filter DSL grammar for enterprise admin search",
+    "authors": [
+      {
+        "name": "denta",
+        "email": "denta.dwipawasesa.tif425@polban.ac.id"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/dntdwp/PLP-Praktek-Tree-Sitter"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": false,
+    "java": false,
+    "node": true,
+    "python": true,
+    "rust": false,
+    "swift": false,
+    "zig": false
+  }
+}
