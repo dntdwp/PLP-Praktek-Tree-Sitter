@@ -88,3 +88,36 @@ not archived = true
     operand: (comparison
       field: (identifier)
       value: (boolean))))
+
+==================
+operator in dengan tiga nilai
+==================
+
+status in ("open", "pending", "closed")
+
+---
+
+(query
+  (in_expression
+    field: (identifier)
+    value: (string)
+    value: (string)
+    value: (string)))
+
+==================
+operator contains untuk pencarian teks
+==================
+
+title contains "invoice" and not archived = true
+
+---
+
+(query
+  (and_expression
+    left: (comparison
+      field: (identifier)
+      value: (string))
+    right: (not_expression
+      operand: (comparison
+        field: (identifier)
+        value: (boolean)))))
