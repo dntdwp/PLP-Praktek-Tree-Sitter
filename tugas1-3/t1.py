@@ -58,3 +58,20 @@ print(tree_ifelse.root_node)
 print("\n=== 3. Pohon Class ===")
 tree_class = parser.parse(kode_class)
 print(tree_class.root_node)
+
+# =====================================================================
+# Langkah 5: Node Bernama vs Node Anonim (children vs named_children)
+# =====================================================================
+print("\n=== 4. Anak-anak function_definition (children) ===")
+fn_node = tree_fungsi.root_node.children[0]
+for c in fn_node.children:
+    print(f"{c.type:15} -> {'bernama' if c.is_named else 'anonim'}")
+
+print("\n=== 5. Anak-anak parameters (children) ===")
+params_node = fn_node.child_by_field_name("parameters")
+for c in params_node.children:
+    print(f"{c.type:15} -> {'bernama' if c.is_named else 'anonim'}")
+
+print("\n=== Perbandingan jumlah children vs named_children ===")
+print(f"function_definition: children={len(fn_node.children)}, named_children={len(fn_node.named_children)}")
+print(f"parameters         : children={len(params_node.children)}, named_children={len(params_node.named_children)}")
