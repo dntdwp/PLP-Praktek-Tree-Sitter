@@ -24,5 +24,5 @@ npm install -g tree-sitter-cli
 - [x] Tugas 2: Penjelajah node
 - [x] Tugas 3: Query pertama
 - [x] Tugas 4: Grammar DSL filter
-- [ ] Tugas 5: Highlight DSL filter
+- [x] Tugas 5: Highlight DSL filter
 - [ ] Tugas 6: Mini proyek pendeteksi TODO dan fungsi panjang
