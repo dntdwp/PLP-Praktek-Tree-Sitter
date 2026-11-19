@@ -1,0 +1,25 @@
+﻿=== 1. Query Nama Fungsi & Jumlah Parameter (fungsi.scm) ===
+baris   8: __init__ (4 parameter)
+baris  16: __init__ (2 parameter)
+baris  22: add_item (3 parameter)
+baris  34: apply_discount (2 parameter)
+baris  41: calculate_tax (2 parameter)
+baris  47: __init__ (1 parameter)
+baris  50: create_order (2 parameter)
+baris  55: process_order (3 parameter)
+baris  65: find_order (2 parameter)
+baris  72: generate_report (1 parameter)
+baris  88: calculate_bulk_price (2 parameter)
+baris 101: main (0 parameter)
+
+=== 2. Query Pemanggilan print(...) (print.scm) ===
+@fn  baris 114: print
+@fn  baris 117: print
+@args  baris 114: ("Final Price:", final_price)
+@args  baris 117: (report)
+
+=== 3. Query Import & From-Import (import.scm) ===
+@modul  baris 1: os
+@modul  baris 2: math
+@modul  baris 3: pathlib
+@modul  baris 4: datetime
