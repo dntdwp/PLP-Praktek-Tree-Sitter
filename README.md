@@ -21,7 +21,7 @@ npm install -g tree-sitter-cli
 ## Progres
 
 - [x] Tugas 1: Membaca pohon
-- [ ] Tugas 2: Penjelajah node
+- [x] Tugas 2: Penjelajah node
 - [ ] Tugas 3: Query pertama
 - [ ] Tugas 4: Grammar DSL filter
 - [ ] Tugas 5: Highlight DSL filter
