@@ -1,1 +1,1 @@
-status = "open"
+priority >= 2 and status = "open"
