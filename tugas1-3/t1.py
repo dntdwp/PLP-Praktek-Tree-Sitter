@@ -75,3 +75,20 @@ for c in params_node.children:
 print("\n=== Perbandingan jumlah children vs named_children ===")
 print(f"function_definition: children={len(fn_node.children)}, named_children={len(fn_node.named_children)}")
 print(f"parameters         : children={len(params_node.children)}, named_children={len(params_node.named_children)}")
+
+# =====================================================================
+# Langkah 6: Error Recovery (Kode Rusak: tanpa ':' dan tanpa ')')
+# =====================================================================
+print("\n=== 6. Kode Rusak (tanpa ':' setelah def sapa(nama)) ===")
+kode_rusak_1 = b"""def sapa(nama)
+    return nama
+"""
+tree_rusak_1 = parser.parse(kode_rusak_1)
+print(tree_rusak_1.root_node)
+print("has_error:", tree_rusak_1.root_node.has_error)
+
+print("\n=== 7. Kode Rusak (tanpa ')' pada print(x) ===")
+kode_rusak_2 = b"print(x\n"
+tree_rusak_2 = parser.parse(kode_rusak_2)
+print(tree_rusak_2.root_node)
+print("has_error:", tree_rusak_2.root_node.has_error)

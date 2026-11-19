@@ -1,0 +1,32 @@
+﻿=== 1. Pohon Fungsi ===
+(module (function_definition name: (identifier) parameters: (parameters (identifier)) body: (block (return_statement (identifier)))))
+
+=== 2. Pohon If/Else ===
+(module (if_statement condition: (comparison_operator (identifier) (integer)) consequence: (block (expression_statement (assignment left: (identifier) right: (integer)))) alternative: (else_clause body: (block (expression_statement (assignment left: (identifier) right: (integer)))))))
+
+=== 3. Pohon Class ===
+(module (class_definition name: (identifier) body: (block (function_definition name: (identifier) parameters: (parameters (identifier)) body: (block (return_statement (identifier)))))))
+
+=== 4. Anak-anak function_definition (children) ===
+def             -> anonim
+identifier      -> bernama
+parameters      -> bernama
+:               -> anonim
+block           -> bernama
+
+=== 5. Anak-anak parameters (children) ===
+(               -> anonim
+identifier      -> bernama
+)               -> anonim
+
+=== Perbandingan jumlah children vs named_children ===
+function_definition: children=5, named_children=3
+parameters         : children=3, named_children=1
+
+=== 6. Kode Rusak (tanpa ':' setelah def sapa(nama)) ===
+(module (ERROR (identifier) (parameters (identifier)) (identifier)))
+has_error: True
+
+=== 7. Kode Rusak (tanpa ')' pada print(x) ===
+(module (ERROR (identifier)))
+has_error: True
