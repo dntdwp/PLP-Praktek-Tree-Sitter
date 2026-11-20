@@ -9,7 +9,8 @@ Repositori tugas praktik Programming Language Pragmatics, Pertemuan 10: Memahami
 | `tugas1-3/` | Skrip Python dan file `.scm`, beserta output-nya dalam `.txt` (Tugas 1-3) |
 | `tree-sitter-filter/` | `grammar.js`, `test/corpus/`, `queries/highlights.scm` (Tugas 4-5) |
 | `cek/` | `cek.py` dan `README.md` berisi cara menjalankan (Tugas 6) |
-| `laporan.pdf` | Laporan maksimal 3 halaman (menyusul) |
+| `laporan.pdf` | Laporan maksimal 3 halaman (penjelasan Tugas 1-6, kendala, catatan AI) |
+| `proposal-draf.pdf` | Draf proposal proyek 1 halaman (topik pemanfaatan Tree-sitter untuk aplikasi web enterprise) |
 
 ## Setup
 
